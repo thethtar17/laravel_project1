@@ -1,9 +1,9 @@
 services:
   php-apache:
     build: .
-    container_name: php-apache
+    container_name: php-apache-new
     ports:
-      - "8080:80"
+      - "8082:80"
     volumes:
       - .:/var/www/html
     depends_on:
@@ -11,14 +11,14 @@ services:
 
   db:
     image: mysql:8.0
-    container_name: mysql-db
+    container_name: mysql-db-new
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_ROOT_PASSWORD: thet
       MYSQL_DATABASE: school
     # volumes:
     #   - db_data:/var/lib/mysql
     ports:
-      - "3306:3306"
+      - "3307:3306"
 
 # volumes:
 #   db_data:

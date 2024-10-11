@@ -1,0 +1,6 @@
+# Ignore the Laravel log file
+/storage/logs/laravel.log
+
+# Other entries (if any)
+node_modules
+npm-debug.log

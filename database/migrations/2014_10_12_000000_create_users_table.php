@@ -20,12 +20,12 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
-            $table->string('position')->nullable();;
-            $table->string('phone');
-            $table->string('roll_number')->nullable();;
-            $table->unsignedBigInteger('year_id')->nullable();;
-            $table->string('address');
-            $table->enum('role', ['admin', 'student', 'teacher']);
+            $table->string('position')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('roll_number')->nullable();
+            $table->unsignedBigInteger('year_id')->nullable();
+            $table->string('address')->nullable();
+            $table->enum('role', ['admin', 'student', 'teacher'])->nullable();
             $table->longText('image')->nullable();
             $table->timestamps();
         });
